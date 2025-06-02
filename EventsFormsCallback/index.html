@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+        <form onsubmit="submitHandler(event)">
+            <div> 
+                <label for="usn">Enter your name </label>
+                <input id="usn" type="text" placeholder="Enter your name" name="username"
+                    onchange="userNameHandler(event)">
+            </div>
+            <div>
+                <label for="eml">Enter your Email </label>
+                <input id="eml" type="email" placeholder="Enter your Email" name="email" onchange="userEmailHandler(event)">
+                
+            </div>
+            <div>
+                <label for="phno">Enter your PhoneNumber </label>
+                <input id="phno" type="number" placeholder="Enter your Phone Number" name="userPhoneNo">
+            </div>
+            <button type="submit">Click to Submit</button>
+            <p id="i1"></p>
+        </form>
+        <div id="card">
+
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

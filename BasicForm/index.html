@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <form onsubmit="formHandler(event)">
+        <div>
+            <h1>User-Details</h1>
+        </div>
+        <div>
+            <label>Enter your name</label>
+            <input type="text" placeholder="Enter your name" name="usrName" oninput="userNameHandler(event)">
+        </div>
+        <div>
+            <label>Enter your Email</label>
+            <input type="email" placeholder="Enter your Email" name="usrEmail">
+        </div>
+        <div>
+            <label>Enter your Password</label>
+            <input type="password" placeholder="Enter your Password" name="usrPassword">
+        </div>
+        <div>
+            <label>Enter your Blood group</label>
+            <input type="text" placeholder="Enter your Blood GRoup" name="usrBloodGroup">
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="card">
+        
+    </div>
+    <div id="back-side" onsubmit="backSideHandler(event)">
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

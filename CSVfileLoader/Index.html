@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Sheet Data Loader</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.js" integrity="sha512-M0cjXJTonbWEdLI3HJIoJSQBb9980RWmOCk+tvWkhgFrAZqSSIg1+1Db/vDu7Qk9W3L90gBynve17PYvarjfQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <header class="header"><div><h1 style="text-decoration: solid;"> Data Loader</h1></div></header>
+    <main>
+        <div class="uploader-conatiner">
+            <img style="height: 100px; width: 100px; margin-top: 10px;" src="images.png">
+            <input type="file" accept=".csv" onchange="Handleupload(event)">
+        </div>
+        <div id="parent">
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+.header{
+   align-self: center;
+   padding: 20px;
+   background-color: #f4f4f4;
+   display: flex;
+   color: #333333;
+   justify-content: center;
+}
+.uploader-conatiner{
+    height: 200px;
+    width: 500px;
+    margin: 0px auto;
+    border: 3px dotted black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+main{
+    background-color: purple; 
+    height: 200vh;
+}
+input{
+    margin-left: 150px;
+}
+#parent{
+    display: flex;
+    padding: 1rem;
+    flex-wrap: wrap;
+    gap: 100px;
+    padding: 2rem;
+    background-color: #fce4ec; 
+    gap: 40px;
+    padding: 40px;
+}
+.row-card{
+    width: 250px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+img{
+    max-width: 60%;
+    margin-left: 50px;
+}
+section{
+    margin-top: 20px;
+}

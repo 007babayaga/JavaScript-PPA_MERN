@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to right, #1CD8D2, #93EDC7);
+    height: 100vh;
+    position: relative;
+}
+.header {
+    background-color: #0077B6; 
+    height: 80px;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.right-side-buttons{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-right: 30px;
+}
+.left-side-buttons{
+    display: flex;
+    justify-content: first baseline;
+    gap: 50px;
+    margin-left: 30px;
+}
+.header button{
+    background-color: rgb(0, 255, 51);
+    color: rgb(21, 21, 94);
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+    transition: all 0.7s ease-in-out;
+}
+
+.right-side-buttons>button:hover{
+    background: linear-gradient(to right, #4d2039, #aae0b5);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.left-side-buttons>button:hover{
+    background: linear-gradient(to right, #4d2039, #aae0b5);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+#Home-card{
+    background-color: rgb(166, 4, 235);
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    position: absolute;
+    top: 65px;
+    left: 42px;
+    display: none;
+}
+#Link-card{
+    background-color: rgb(166, 4, 235);
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    position: absolute;
+    top: 65px;
+    left: 190px;
+    display: none;
+}
+#Instagram-card{
+    background-color: rgb(166, 4, 235);
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 20px;
+    top: 65px;
+    left: 340px;
+    display: none;
+}
+
+
+
+
+

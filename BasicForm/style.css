@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    background: linear-gradient(to right, #dbeafe, #e0f7fa); /* Light blue & cyan */
+}
+
+form{
+    width: 300px;
+    background-color: rgb(179, 233, 245);
+    border: none;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    border-radius: 20px;
+    height: 400px;
+}
+form>div{
+    padding: 0px 0px 0px 10px;
+}
+
+form>div>label{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* margin-bottom: 10px; */
+}
+form>div>input{
+
+    height: 30px;
+    width: 220px;
+    border-radius: 10px;
+    margin-top: 8px;
+    padding: 10px;
+    border: none;
+}
+form>div>h1{
+    text-align: center;
+    color: blue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+    button {
+        width: 90%;
+        padding: 10px;
+        background-color: #ff7f50; /* Coral color */
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    button:hover {
+        background-color: #ff6347; /* Darker coral */
+        transform: scale(1.05);
+    }
+    
+    button:active {
+        background-color: #e5533c; /* Slightly darker */
+        transform: scale(0.98);
+    }
+
+#card{
+    width: 300px;
+    background-color: rgb(179, 233, 245);
+    border: none;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    border-radius: 20px;
+    height: 400px;
+    display: none;
+}
+#back-side{
+    
+    width: 300px;
+    background-color: rgb(179, 233, 245);
+    border: none;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    border-radius: 20px;
+    height: 400px;
+    display: none;
+}
+#back-button{
+    width: 90%;
+        padding: 10px;
+        background-color: #ff7f50; /* Coral color */
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+
+

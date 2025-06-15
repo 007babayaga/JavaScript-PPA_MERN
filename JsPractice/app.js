@@ -108,5 +108,45 @@
 //     },1000);
 // }
 // a();
-
+// const obj ={
+//     name:"asus",
+//     version:"3.45",
+//     price:"34k",
+// }
+// obj.lld="dfd";
+// // delete obj.name;
+// // console.log(obj);
+// // const prop = prompt("enter property to search"); //taking input from user
+// // // const val = prompt("enter its val");
+// // // obj[prop]=val;
+// // const k = prompt("What you want to add");
+// const v = prompt("val");
+// obj.k=v;
+// console.log(obj);
+// const d = prompt("what do you want to delte");
+// delete obj[d];
+// console.log(obj);
+const info ={
+    name:'divya',
+    age:22,
+    gender:"female",
+    height:"180",
+    weight:22,
+    allinfo:function (){
+        console.log(`Name is ${this.name} age would be ${this.age}`); //function inside object
+    },
+    bmi:function(){
+        const bmi = this.height/this.weight*weight;
+        if(bmi<=20){
+            console.log("you are underweight")
+        }
+        else if(bmi>21&&bmi<=25){
+            console.log("you are absolutely fine");
+        }
+        else{
+            console.log("you are overweight");
+        }
+    }
+}
+info.bmi();
 

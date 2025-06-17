@@ -126,27 +126,129 @@
 // const d = prompt("what do you want to delte");
 // delete obj[d];
 // console.log(obj);
-const info ={
-    name:'divya',
-    age:22,
-    gender:"female",
-    height:"180",
-    weight:22,
-    allinfo:function (){
-        console.log(`Name is ${this.name} age would be ${this.age}`); //function inside object
-    },
-    bmi:function(){
-        const bmi = this.height/this.weight*weight;
-        if(bmi<=20){
-            console.log("you are underweight")
-        }
-        else if(bmi>21&&bmi<=25){
-            console.log("you are absolutely fine");
-        }
-        else{
-            console.log("you are overweight");
-        }
-    }
-}
-info.bmi();
+// const info ={
+//     name:'divya',
+//     age:22,
+//     gender:"female",
+//     height:"180",
+//     weight:22,
+//     allinfo:function (){
+//         console.log(`Name is ${this.name} age would be ${this.age}`); //function inside object
+//     },
+//     bmi:function(){
+//         const bmi = this.height/this.weight*weight;
+//         if(bmi<=20){
+//             console.log("you are underweight")
+//         }
+//         else if(bmi>21&&bmi<=25){
+//             console.log("you are absolutely fine");
+//         }
+//         else{
+//             console.log("you are overweight");
+//         }
+//     }
+// }
+// info.bmi();
+// console.log(a);
+// var a = "hello";
+// console.log(a);
+// a="puppy";
+// var a = "kitty";
+// console.log(a);
+// function add(){
+//     var b =45;
+//     console.log(b);
+// }
+// console.log(b);
+// add();
+// let a  = "apple";
+// console.log(a);
+// a="banana";
+// console.log(a);
+// let a = "kiiw";
+// {
+//     const b = "banana";
+//     function add(){
+//         var a  ="apple";
+//         console.log(a);
+//         console.log("inside the function");
+//         console.log(b);
+//     }
+//     add();
+//     console.log("outside the function");
+//     console.log(b);
+// }
+// var can be reassigned and can be redeclared>>let can be reassigned but cant be redeclared>>const cant be reassigned and cant be redeclaered
+// var is only function scoped that means it can be used inside a fucntion only
+// let and const are block scoped that means that they can be used inside the block
+
+// promitiv type >number>string>boolean>
+// const a = 5;
+// const b ="124";
+// console.log(a-b);
+// >>>functions in js
+// const arr = [1,2,3,4,5];
+// arr.forEach((e,i)=>{
+//     console.log(e*2,"----",i);
+// })
+// higher order fuunctiond ---forEach,Map,setTimeout,setInterval,filter
+// const pr1 = fetch('https://www.google.com/').then((res)=>{
+//     res.json
+// }).catch("bye");
+// console.log(pr1);
+// setTimeout(()=>{
+//     console.log("happy")
+// },1000);
+
+// const arr = [1,2,3,4];
+// // arr.pop(); //deletes  an elemnt from the last
+// // console.log(arr);
+// // arr.push("happy");//add an element at the last
+// // console.log(arr);
+// arr.join("-");
+// console.log(arr);
+// const arr1 = [1,2,6,4,5];
+// // const arr2 =arr1.slice(3);
+// const even = arr1.filter(nums=>nums%2==0);
+// console.log(even);
+
+// const obj = {
+//     name:"rajat",
+//     age:21,
+//     Gender:"male",
+//     isSubs:function (){
+//         if(this.age>21){
+//             console.log("yes");
+//         }
+//         else{
+//             console.log("no");
+//         }
+//     }
+// }
+// // obj.name="sikka"
+// // obj.ff="ertrf";
+// const k = prompt("enter any key");
+// const v = prompt("enter any val");
+// obj[k]=v;
+// // const a =Object.entries(obj);
+// console.log(obj);
+// const{name,age}=obj; //destru
+// console.log(name ,age);
+
+// const b = obj;
+// if(obj===b){
+//     console.log("ture");
+// }
+// else{
+//     console.log("false");
+// }
+const a =10;
+const f =10;
+const cc = (a==f?.a+f);
+console.log(cc);
+
+
+
+
+
 

@@ -242,10 +242,38 @@
 // else{
 //     console.log("false");
 // }
-const a =10;
-const f =10;
-const cc = (a==f?.a+f);
-console.log(cc);
+// const a =10;
+// const f =10;
+// const cc = (a==f?.a+f);
+// console.log(cc);
+
+const domroot = document.getElementById('root');
+const header = document.createElement('h1');
+header.className='header';
+header.innerHTML=`Products List`;
+domroot.appendChild(header);
+const parent = document.createElement('div');
+parent.className="parent";
+fetch('https://dummyjson.com/products?limit=20')
+  .then(res => res.json())//.then(console.log)
+  .then(data => {
+    data.products.forEach(product => {
+        const d = document.createElement('div');
+    d.className = "hh";
+    d.innerHTML = `
+        <img src="${product.images[0]}" width="200"/>
+        <h1>Id: ${product.id}</h1>
+        <h2>Rating: ${product.rating}</h2>
+        <h2>Brand: ${product.brand}</h2>
+        <button>Add To Cart</button>
+      `;
+      parent.appendChild(d);
+    });
+  });
+  domroot.appendChild(parent);
+
+
+
 
 
 

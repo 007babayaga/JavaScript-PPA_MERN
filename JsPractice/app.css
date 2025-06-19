@@ -1,3 +1,59 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
 #root>p{
     background-color: red;
+}
+.hh{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s ease-in-out;
+}
+.hh:hover{
+    scale: 1.03;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    
+
+}
+button{
+    padding: 5px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-top:10px;
+    margin-bottom: 10px; 
+    display : flex;
+    justify-content: center;
+    
+ }
+
+.header{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    border: 1px solid #ccc; 
+    background-color: rgb(222, 184, 135);
+    border-radius: 10px;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+    color: blueviolet;
+    position: sticky;
+    top: 0;
+    right: 0;
+    z-index: 1;
 }

@@ -249,28 +249,45 @@
 
 const domroot = document.getElementById('root');
 const header = document.createElement('h1');
-header.className='header';
-header.innerHTML=`Products List`;
+header.className="card";
+// header.className='header';
+// header.innerHTML=`Products List`;
+// domroot.appendChild(header);
+// const parent = document.createElement('div');
+// parent.className="parent";
+// const req =fetch('https://dummyjson.com/products?limit=20')
+//   .then((res => res.json()))
+//   .then(data => {
+//     data.products.forEach(product => {
+//         const d = document.createElement('div');
+//     d.className = "hh";
+//     d.innerHTML = `
+//         <img src="${product.images[0]}" width="200"/>
+//         <h1>Id: ${product.id}</h1>
+//         <h2>Rating: ${product.rating}</h2>
+//         <h2>Brand: ${product.brand}</h2>
+//         <button>Add To Cart</button>
+//       `;
+//       parent.appendChild(d);
+//     });
+//   });
+//   domroot.appendChild(parent);
+const button = document.createElement('button');
+domroot.appendChild(button);
+button.onclick = () => HandleClick();
+const HandleClick =()=>{
+  const pr1 = fetch('https://dummyjson.com/ip');
+  pr1.then((res)=>{
+    const pr2 = res.json();
+    pr2.then((data)=>{
+      console.log(data);
+      header.innerHTML=`
+      <h2>Ip would be: ${data.ip}</h2>
+      <h2>User Agent : ${data.userAgent}</h2>`
+    })
+  })
+}
 domroot.appendChild(header);
-const parent = document.createElement('div');
-parent.className="parent";
-fetch('https://dummyjson.com/products?limit=20')
-  .then(res => res.json())//.then(console.log)
-  .then(data => {
-    data.products.forEach(product => {
-        const d = document.createElement('div');
-    d.className = "hh";
-    d.innerHTML = `
-        <img src="${product.images[0]}" width="200"/>
-        <h1>Id: ${product.id}</h1>
-        <h2>Rating: ${product.rating}</h2>
-        <h2>Brand: ${product.brand}</h2>
-        <button>Add To Cart</button>
-      `;
-      parent.appendChild(d);
-    });
-  });
-  domroot.appendChild(parent);
 
 
 

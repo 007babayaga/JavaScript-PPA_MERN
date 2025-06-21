@@ -57,3 +57,12 @@ button{
     right: 0;
     z-index: 1;
 }
+.card{
+    height: fit-content;
+    width: fit-content;
+    border: 2px solid red;
+}
+/* button{
+    height: 20px;
+    width: 50px;
+} */

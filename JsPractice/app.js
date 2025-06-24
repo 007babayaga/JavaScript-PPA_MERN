@@ -247,9 +247,9 @@
 // const cc = (a==f?.a+f);
 // console.log(cc);
 
-const domroot = document.getElementById('root');
-const header = document.createElement('h1');
-header.className="card";
+// const domroot = document.getElementById('root');
+// const header = document.createElement('h1');
+// header.className="card";
 // header.className='header';
 // header.innerHTML=`Products List`;
 // domroot.appendChild(header);
@@ -272,28 +272,39 @@ header.className="card";
 //     });
 //   });
 //   domroot.appendChild(parent);
-const button = document.createElement('button');
-domroot.appendChild(button);
-button.onclick = () => HandleClick();
-const HandleClick =()=>{
-  const pr1 = fetch('https://dummyjson.com/ip');
-  pr1.then((res)=>{
-    const pr2 = res.json();
-    pr2.then((data)=>{
-      console.log(data);
-      header.innerHTML=`
-      <h2>Ip would be: ${data.ip}</h2>
-      <h2>User Agent : ${data.userAgent}</h2>`
-    })
-  })
-}
-domroot.appendChild(header);
+// const button = document.createElement('button');
+// domroot.appendChild(button);
+// button.onclick = () => HandleClick();
+// const HandleClick =()=>{
+//   const pr1 = fetch('https://dummyjson.com/ip');
+//   pr1.then((res)=>{
+//     const pr2 = res.json();
+//     pr2.then((data)=>{
+//       console.log(data);
+//       header.innerHTML=`
+//       <h2>Ip would be: ${data.ip}</h2>
+//       <h2>User Agent : ${data.userAgent}</h2>`
+//     })
+//   })
+// }
+// domroot.appendChild(header);
+// Select parent and child buttons
+// const parentBtn = document.getElementById('parent');
+// const childBtn = document.getElementById('child');
 
+// // Add event listener on parent
+// parentBtn.addEventListener('click', () => {
+//   console.log('Parent button clicked');
+// });
 
-
-
-
-
+// // Add event listener on child
+// childBtn.addEventListener('click', () => {
+//   console.log('Child button clicked');
+// });
+// var let const,type coercion ,loose and strict equality,data types in js(Pmt and non pmt),Async callbacks,callbacks
+// HigherOrderfn - array -obj -promises-events - eventlisitner - destrctrunig - spreading-Bubbling-capturing-4types of functions
+// domApi - api calling - 
+//
 
 
 

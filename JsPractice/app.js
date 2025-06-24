@@ -303,8 +303,6 @@
 // });
 // var let const,type coercion ,loose and strict equality,data types in js(Pmt and non pmt),Async callbacks,callbacks
 // HigherOrderfn - array -obj -promises-events - eventlisitner - destrctrunig - spreading-Bubbling-capturing-4types of functions
-// domApi - api calling - 
-//
 
 
 

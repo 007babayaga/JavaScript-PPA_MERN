@@ -295,14 +295,32 @@
 // // Add event listener on parent
 // parentBtn.addEventListener('click', () => {
 //   console.log('Parent button clicked');
-// });
+// },true);
 
 // // Add event listener on child
 // childBtn.addEventListener('click', () => {
 //   console.log('Child button clicked');
 // });
-// var let const,type coercion ,loose and strict equality,data types in js(Pmt and non pmt),Async callbacks,callbacks
+// // var let const,type coercion ,loose and strict equality,data types in js(Pmt and non pmt),Async callbacks,callbacks
 // HigherOrderfn - array -obj -promises-events - eventlisitner - destrctrunig - spreading-Bubbling-capturing-4types of functions
+// const arr =[1,2,3,4,5];
+// // arr[5]="apple";
+// // arr.splice(0,0,-1,-2);
+// // console.log(arr);
 
+// arr.forEach((ele,idx,arr)=>{
+//     console.log(ele);
+// })
+// const pa = document.getElementById('parent');
+// const ele = document.createElement('div');
+// ele.style.backgroundColor="red";
+// ele.innerHTML=`<p>Hello</p>
+// <p>How</p>`
 
-
+// pa.appendChild(ele)
+// setTimeout(()=>{
+//     console.log("hello")
+// },2000)
+const Handleclick = (e)=>{
+    console.log(e.target.value);
+}
